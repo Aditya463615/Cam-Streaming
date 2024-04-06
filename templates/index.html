@@ -1,0 +1,27 @@
+A<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Stream</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('video_feed') }}" alt="Camera Stream">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <style>
+        img { 
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: stretch;
+        }
+    </style>
+</body>
+</html>
