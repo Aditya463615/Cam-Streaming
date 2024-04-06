@@ -6,8 +6,8 @@ app = Flask(__name__)
 # Replace <URL> with the actual URL of your Dahua camera
 Username = 'admin'
 Password = 'admin@123'
-IP = '192.168.31.52'
-Port = '554'
+IP = ''
+Port = ''
 
 url = f"rtsp://{Username}:{Password}@{IP}:{Port}/cam/realmonitor?channel=4&subtype=0"
 
